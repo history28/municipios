@@ -1,0 +1,82 @@
+ CREATE TABLE usuarios(
+camp0 INT NOT NULL AUTO_INCREMENT ,
+id1 int( 11 ) NOT NULL default '0',
+nombreCHAR( 50 ) ,
+apellidoCHAR( 50 ) ,
+emailCHAR( 50 ) ,
+passCHAR( 50 ) ,
+direccion text NOT NULL ,
+notas text NOT NULL ,
+nombre2CHAR( 50 ) ,
+apellido2CHAR( 50 ) ,
+email2CHAR( 50 ) ,
+pass2CHAR( 50 ) ,
+direccion2 text NOT NULL ,
+areaCHAR( 50 ) ,
+fechaCHAR( 50 ) ,
+seudonimoCHAR( 50 ) ,
+KEY ( camp0 )
+) 
+
+
+CREATE TABLE pagos(
+camp0 INT NOT NULL AUTO_INCREMENT ,
+id1 int( 11 ) NOT NULL default '0',
+nombre CHAR( 50 ) ,
+apellidoCHAR( 50 ) ,
+emailCHAR( 50 ) ,
+passCHAR( 50 ) ,
+direccion text NOT NULL ,
+notas text NOT NULL ,
+nombre2CHAR( 50 ) ,
+apellido2CHAR( 50 ) ,
+email2CHAR( 50 ) ,
+pass2CHAR( 50 ) ,
+direccion2 text NOT NULL ,
+areaCHAR( 50 ) ,
+fechaCHAR( 50 ) ,
+seudonimoCHAR( 50 ) ,
+KEY ( camp0 )
+) 
+
+
+
+CREATE TABLE miforo1 (
+camp0 INT NOT NULL AUTO_INCREMENT,
+idusu int(11) NOT NULL default '0',
+concepto CHAR(50),
+descripcion text NOT NULL,
+categoria CHAR(50),
+cargo CHAR(20),
+recargo CHAR(20),
+total CHAR(20),
+abono CHAR(20),
+saldo CHAR(20),
+folio CHAR(50),
+pago CHAR(50),
+identificador CHAR(50),
+cantidad CHAR(50),
+saldotot CHAR(50),
+mante CHAR(50),
+extra CHAR(50),
+areacom CHAR(50),
+adeudostot CHAR(50),
+fecha CHAR(50),
+KEY (camp0) 
+)
+
+
+CREATE TABLE mensajes (
+camp0 INT NOT NULL AUTO_INCREMENT,
+id1 int(11) NOT NULL default '0',
+id2 int(11) NOT NULL default '0',
+titulo CHAR(50),
+descripcion text NOT NULL,
+destino CHAR(50),
+origen CHAR(50),
+fecha CHAR(50),
+hora CHAR(50),
+tipo CHAR(50),
+estado CHAR(50),
+KEY (camp0) 
+)

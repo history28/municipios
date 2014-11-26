@@ -1,0 +1,27 @@
+
+PROCESO
+un usuario se registra 
+luego automaticamente le llega a su correo un mensaje con un link para que valide su registro
+al dar clic queda validado su registro en el sistema
+luego de esto ya puede ingresar con su email y password.
+
+PASOS PARA INSTALAR
+1)
+crear un base de datos
+luego abrir el archivo bd.sql, copiar todo el contenido y pegarlo en la base de datos creada.
+
+2)
+modificar los archivos de conexion con la BD, estos son:
+muni1\models\connec.php
+muni1\admin\models\connec.php
+
+3)
+para que el link llegue correctamente al email de los que se registran debe hacer el siguiente cambio:
+ir a muni1\vistas\re1.php
+luego buscar la linea 47, alliencontrara este link "http://localhost/muni1/vistas/uservalida.php"
+debe cambiar http://localhost por la direccion web que corresponda.
+
+
+* puede modificar la lista de provincias y distritos para adecuarlo a cualquier region.
+* top-dialog es un CMS, esta es la version 1.3
+
